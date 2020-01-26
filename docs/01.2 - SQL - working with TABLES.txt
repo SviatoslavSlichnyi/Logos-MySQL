@@ -1,0 +1,35 @@
+		                            Tables
+	        Adding data:
+INSERT INTO <table> (<field #1>, ...) 
+	VALUES 
+		(<values for field #1>, ...),
+		(<values for field #1>, ...),
+		...
+		(<values for field #1>, ...),
+		(<values for field #1>, ...); - inserting data into fields.
+
+
+
+	        Updating data:
+UPDATE ... SET ...,... ..., WHERE ...
+UPDATE <table>
+SET
+    <field> = <a new value>,
+    <field> = <a new value>,
+    ...,
+WHERE <specify the exact field>;
+
+(Example: UPDATE `users` SET `name` = 'Kevin' WHERE id = 3)
+
+
+
+            Deleting data:
+DELETE FROM <table-name> WHERE <condition to know which elements to delete>;
+
+WHERE operators:
+    BETWEEN <from> AND <to>
+    <field> IN (<it equals to this>, <it equals to this>, ..., <it equals to this>)
+    <field> LIKE '<Some part of word>%' - (% - the end could be everything).
+
+!!!BE CAREFUL:
+TRUNCATE - to clear (delete) full table.

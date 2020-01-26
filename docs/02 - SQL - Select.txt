@@ -1,0 +1,33 @@
+SELECT <>
+    FROM <>
+        WHERE <>
+            ORDER BY <>
+                LIMIT <>,<>
+
+SELECT <field>, ..., <field> FROM <table-name>
+	WHERE ...(Example: id >= 3 AND id < 5 AND  bio IS (NOT) NULL) - to show data.
+		operators:
+			> - more than
+			< - less than
+			= - equal
+			<> - not equal
+
+WHERE (with:)
+			... AND ...
+			... OR ...
+			IS ...
+			IS NOT ...
+			LIKE '<text>%' | LIKE '1_-wired' (% - some other characters; _ - some char. ('\_' == '_'))
+			BETWEEN ... AND ...
+			IN (..., ..., ...)
+
+SELECT * FROM <tbl_name> LIMIT <first numbers which will not be outputted>, <numbers to output>
+    - max numbers of outputs.
+
+SELECT DISTINCT `<field>` FROM <table-name> - output field with names which is not repeated.
+
+Sorting data:
+SELECT * FROM <table-name> ORDER BY <field> - to sort it by something.
+		operators:
+			DESC - decreasing output.
+

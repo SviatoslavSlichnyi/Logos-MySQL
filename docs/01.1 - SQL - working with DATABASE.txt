@@ -1,0 +1,17 @@
+		SQL
+Command - what that is doing.
+
+CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] db_name - creates a database with the given name.
+DROP {DATABASE | SCHEMA} [IF EXISTS] db_name - drops all tables in the database and deletes the database.
+
+Fields in tables can have this type (4 the most popular):
+	INT, VARCHAR, TEXT, DATE
+
+CREATE TABLE - creates a table with the given name.
+	operators:
+		NOT NULL - this field can't be empty.
+		AUTO_INCREMENT - increment it automatic.
+		PRIMARY KEY (<field>) - the field can't repeat, this field has to be origin.
+ALTER TABLE <table-name> ADD <a new field> - adding a new one field to table which already exists.
+ALTER TABLE <table-name> DROP COLUMN <a field> - deleting a field.
+ALTER TABLE <table-name> CHANGE <field> <a new field> <operators> - change field behaviour.

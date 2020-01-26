@@ -1,0 +1,21 @@
+                            Aggregate Functions
+SELECT COUNT(*) FROM <tbl_name>
+    WHERE <>
+    ORDER BY <>
+    LIMIT <>,<>
+
+databases() - output database which is used now
+count(<some field>) - amount of some field
+sum()
+avg() - average ( <first>, <second>, ... / amount )
+min()
+max()
+round(<field, numbers after dot>)
+ucase()
+lcase()
+mid(<field, from, to>) - get substring from output information in line [from, to]
+now() - today date and time
+
+Example:
+SELECT ..., ... ..., FROM products WHERE `price` =
+    (SELECT max(price) FROM products WHERE scale = '1:12');
